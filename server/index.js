@@ -43,10 +43,11 @@ app.use(express.static(path.join(__dirname, 'react-ui/build')));
 //   .catch(error => console.log(error));
 //   });
 
-  app.get('/getTweets/:screen_name', (request, response) => {
+  app.get('/getTweets/:username', (request, response) => {
+    console.log(request.params.username)
     client.get('statuses/user_timeline', {
-    screen_name: "realDonaldTrump",
-    // screen_name: request.params.screen_name,
+    // screen_name: "HillaryClinton",
+    screen_name: request.params.username,
     tweet_mode: 'extended',
     count: 5
   })
