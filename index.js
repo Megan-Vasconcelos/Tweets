@@ -4,7 +4,7 @@ const path = require('path');
 const Twitter = require ('twitter');
 const cors = require('cors');
 
-app.set('port', (process.env.PORT || 5000));
+const port = process.env.PORT || 5000;
 
 require('dotenv').config();
 const app = express();
@@ -47,6 +47,6 @@ app.get('*', (req, res) => {
   
  
 
-app.listen(app.get("port"), function () {
+app.listen(port, () => {
     console.log(`Server is running on port ${port}., ${ process.env.PORT}`)
 })
