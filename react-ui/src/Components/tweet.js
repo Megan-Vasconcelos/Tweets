@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Tweet from 'react-tweet'
+import Tweet from 'react-tweet';
 
 //Renders the tweet in twitter format
 

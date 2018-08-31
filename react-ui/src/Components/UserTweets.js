@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import RenderTweet from './Tweet';
+import RenderTweet from './tweet';
 import {fetchTweets} from '../Action';
 
 
