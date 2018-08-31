@@ -1,7 +1,6 @@
 .h2{
     font-family: 'Alfa Slab One', cursive;
     margin-top: 0;
-    font-weight: 200;
   }
   
 
@@ -9,6 +8,7 @@
     display: flex;
     justify-content:center;
     padding-top:15px;
+    box-shadow: 2px;
 }
 
 .image2{
@@ -16,7 +16,7 @@
 }
 
 .main-content{    
-    background-color:#a3c3d8;
+    background-color:#8ce4df;
     min-height:750px;
     max-width:100%;
     justify-content: center;
@@ -24,15 +24,17 @@
 }
 
 .tweets{
-    padding-left:30.5%;
+    padding-left:30.5%;   
 }
 
 
 
 .main-header {
     max-width: 100%;
+    height:auto;
     background-color: #987ced;
-    font-family: 'Alfa Slab One', cursive;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 17pt;
     text-align:center;
     color: #fff;
     overflow: hidden;
@@ -58,7 +60,3 @@
     font-size:18px;
   
   }
-
-  @media only screen and (max-width:700px) {
-  
-}

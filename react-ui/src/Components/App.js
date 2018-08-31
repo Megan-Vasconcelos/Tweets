@@ -20,20 +20,19 @@ class App extends Component {
   render() {
         return (
             <div className="main-app">
-            <header className="main-header">
-            <h1>Donald Trump or Hillary Clinton</h1>
-            </header>
+              <header className="main-header">
+                <h1>Donald Trump or Hillary Clinton</h1>
+                <h3>Pick the lesser of 2 evils..</h3>      
+              </header>
             
             <main className="main-content">
-            <Button></Button>
-            {this.props.children}
-            <div className="tweetContainer">
-            <Route className="tweets" exact={true} path='/tweets/:username' render={this.renderTweets} />
-            </div>
+              <Button></Button>
+              <div className="tweetContainer">
+                <Route className="tweets" exact={true} path='/tweets/:username' render={this.renderTweets} />
+              </div>
             </main>
     
-          </div>
-
+            </div>
     )
   }
 }
