@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Tweet from 'react-tweet'
 
 //Renders the tweet in twitter format
 
-class RenderTweet extends React.Component {
+class RenderTweet extends Component {
   
   render () {
     const linkProps = {target: '_blank', rel: 'noreferrer'}
