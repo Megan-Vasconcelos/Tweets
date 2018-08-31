@@ -1,0 +1,64 @@
+.h2{
+    font-family: 'Alfa Slab One', cursive;
+    margin-top: 0;
+    font-weight: 200;
+  }
+  
+
+.images{
+    display: flex;
+    justify-content:center;
+    padding-top:15px;
+}
+
+.image2{
+    padding-left:50px;
+}
+
+.main-content{    
+    background-color:#a3c3d8;
+    min-height:750px;
+    max-width:100%;
+    justify-content: center;
+    padding-bottom:25px;    
+}
+
+.tweets{
+    padding-left:30.5%;
+}
+
+
+
+.main-header {
+    max-width: 100%;
+    background-color: #987ced;
+    font-family: 'Alfa Slab One', cursive;
+    text-align:center;
+    color: #fff;
+    overflow: hidden;
+    padding: 0.5em 2em 0.5em 1em;
+    /* display: flex; */
+    justify-content: center;
+  }
+  
+  .tweets{
+    margin-top: 10px;
+    /* margin-left: 30.5%; */
+    justify-content: center;
+  }
+  
+  .tweet{
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+  
+  .toggleButton{
+    border-radius:2px;
+    font-family: 'Alfa Slab One', cursive;
+    font-size:18px;
+  
+  }
+
+  @media only screen and (max-width:700px) {
+  
+}

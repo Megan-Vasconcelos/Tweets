@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
+import {Route} from 'react-router-dom';
+
 import './App.css';
 import UserTweets from './UserTweets'
 import Button from './Button'
-// import { Link } from "react-router-dom";
-import {Route, Switch} from 'react-router-dom';
 
 
 class App extends Component {
@@ -20,13 +20,16 @@ class App extends Component {
   render() {
         return (
             <div className="main-app">
-            <header>
-            <h1>Donald or Hillary</h1>
-            <Button></Button>
+            <header className="main-header">
+            <h1>Donald Trump or Hillary Clinton</h1>
             </header>
+            
             <main className="main-content">
+            <Button></Button>
             {this.props.children}
-            <Route exact={true} path='/tweets/:username' render={this.renderTweets} />
+            <div className="tweetContainer">
+            <Route className="tweets" exact={true} path='/tweets/:username' render={this.renderTweets} />
+            </div>
             </main>
     
           </div>

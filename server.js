@@ -30,23 +30,8 @@ app.use((req, res, next) => {
 
 app.use(express.static(path.join(__dirname, 'react-ui/build')));
 
-
-//Endpoint
-// app.get('/getTweets/:screen_name', (request, response) => {
-    
-//     client.get('statuses/user_timeline', {
-//     screen_name: request.params.screen_name,
-//     tweet_mode: 'extended',
-//     count: 3
-//   })
-//   .then(tweets => response.json(tweets))
-//   .catch(error => console.log(error));
-//   });
-
   app.get('/getTweets/:username', (request, response) => {
-    console.log(request.params.username)
     client.get('statuses/user_timeline', {
-    // screen_name: "HillaryClinton",
     screen_name: request.params.username,
     tweet_mode: 'extended',
     count: 5
@@ -54,14 +39,6 @@ app.use(express.static(path.join(__dirname, 'react-ui/build')));
   .then(tweets => response.json(tweets))
   .catch(error => console.log(error));
   });
-
-
-// let params = {screen_name: "realDonaldTrump", tweet_mode: "extended", count: 3}
-// client.get('statuses/user_timeline', params, function(error, tweets, response){
-//     if(!error) {
-//         console.log(tweets)
-//     }
-// })
 
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/react-ui/build/index.html'));

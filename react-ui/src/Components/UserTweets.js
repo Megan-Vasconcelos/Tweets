@@ -41,7 +41,7 @@ class UserTweets extends Component {
         
 
         if(tweets.length === 0){
-            return(<div>Patience is a virtue...</div>)
+            return(<div></div>)
             
         }
         return(
