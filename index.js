@@ -4,7 +4,7 @@ const path = require('path');
 const Twitter = require ('twitter');
 const cors = require('cors');
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 8080;
 
 require('dotenv').config();
 const app = express();
