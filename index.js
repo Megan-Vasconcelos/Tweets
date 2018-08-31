@@ -2,7 +2,7 @@ const express = require ('express');
 const morgan = require ('morgan');
 const path = require('path');
 const Twitter = require ('twitter');
-const cors = require ('cors');
+
 
 const port = process.env.PORT || 5000;
 
