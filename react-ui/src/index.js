@@ -13,11 +13,16 @@ import './index.css';
 const sagaMiddleware =createSagaMiddleware();
 
 const middleware = applyMiddleware(sagaMiddleware)
+// const store = createStore(
+//   tweetReducers,
+//   compose(middleware,
+//   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+// );
 const store = createStore(
   tweetReducers,
-  compose(middleware,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+  middleware
 );
+
 
 sagaMiddleware.run(watchfetchTweetsAsync); 
 
